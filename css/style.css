@@ -53,6 +53,13 @@ ul {
     padding: 10px 40px;
     border-radius: 30px;
 }
+.light-btn {
+    background-color: var(--light-color);
+    color: var(--dark-color)
+}
+.small-btn {
+    padding: 7px 10px;
+}
 /*  */
 /* Text */
 .text-left {
@@ -81,10 +88,13 @@ nav, header nav ul {
     align-items: center;
 }
 header nav ul {
-    display: none;
+    visibility: hidden;
 }
 header nav a {
-    padding-left: 15px;
+    margin-left: 15px;
+}
+nav > a {
+    font-size: 2rem;
 }
 /* main */
 main {
@@ -139,5 +149,15 @@ footer {
 }
 .image, .left-card {
     width: calc((100% / 2) - 10px);
+}
+}
+/* from 992px*/
+/* Header */
+@media screen and (min-width: 992px) {
+header nav ul {
+   visibility: visible;
+}
+nav > a {
+    display: none;
 }
 }
