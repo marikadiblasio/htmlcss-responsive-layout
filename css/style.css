@@ -150,19 +150,33 @@ header {
     height: 80px;
     width: 100%;
 }
-nav, header nav ul {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav ul {
-    visibility: hidden;
+header nav .horizontal-ul {
+    display: none;
 }
 header nav a {
     margin-left: 15px;
 }
-nav > a {
+.hamburger {
     font-size: 2rem;
+}
+.hamburger-ul {
+    width: 9rem;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 1rem;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    visibility: hidden;
+}
+.hamburger:hover ~ .hamburger-ul.bg-secundary{
+    visibility: visible;
 }
 /* main */
 main {
@@ -335,8 +349,10 @@ footer {
     margin: 0 auto;
 }
 /* Header */
-header nav ul {
-   visibility: visible;
+header nav .horizontal-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 nav > a {
     display: none;
