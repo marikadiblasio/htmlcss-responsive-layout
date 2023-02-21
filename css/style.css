@@ -184,11 +184,11 @@ main {
 }
 .image{
     max-width: 100%;
+    margin-top: 30px;
 }
 .image img {
     max-width: 100%;
     display: block;
-    vertical-align: bottom;
 }
 #intro h3, #intro div > i {
     color: var(--secundary-color);
@@ -287,8 +287,8 @@ footer {
 #intro .card:first-child {
     width: calc((100% / 3 * 2) - 10px);
 }
-.image, .left-card {
-    width: calc((100% / 2) - 10px);
+.image {
+    width: calc(100% / 2);
 }
 /* plannings */
 .box {
@@ -327,7 +327,12 @@ footer {
 @media screen and (min-width: 992px) {
     /* General */
 .container {
-    max-width: 950px;
+    max-width: 940px;
+}
+.small-container {
+    padding: 15px;
+    max-width: 992px;
+    margin: 0 auto;
 }
 /* Header */
 header nav ul {
@@ -343,6 +348,15 @@ nav > a {
     gap: 10px;
     /* justify-content: center; */
 }
+.image, .left-card {
+    width: calc((100% / 2) - 10px);
+}
+.left-card {
+    margin-top: 50px;
+}
+.image {
+    align-self: flex-end;
+}
 }
 
 
@@ -351,11 +365,6 @@ nav > a {
 /* General */
 .container {
     max-width: 1140px;
-}
-.small-container {
-    padding: 15px;
-    max-width: 992px;
-    margin: 0 auto;
 }
 /* Features */
     #features .card{
